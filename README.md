@@ -1,6 +1,42 @@
 # talk_to_repo_example
 
-Example of turning a Powerpoint talk into a repo README.md. Created by Phil Wilmarth, November 9, 2019.
+### Created by Phil Wilmarth, November 9, 2019.
+
+Example of turning a Powerpoint talk into a repo README.md. This is an example inside an example. The main repository is about how to create a repository to host a presentation from a scientific meeting. This README.md will have images, text, and links to show the steps involved.
+
+The example talk used here is a truncated talk from the 2018 Cascadia Proteomics Symposium about using Jupyter notebooks in proteomics work. There is a `talk_example` folder that has the shortened talk turned into a useful repository. The folder has a `README.md` file that functions as a web page because Github uses `README.md` file like websites use `index.html` files. The images used in the   `README.md` file are in an `images_talk` folder. The PowerPoint file of the truncated talk (`Cascadia_2018_short.pptx`) is also present. The full presentation is [located here](https://github.com/pwilmart/Cascadia_2018).
+
+There are different ways to organize things at Github in this context. Separate repositories for each meeting presentation could be created. Alternatively, a single meeting repository could be created and each presentation added as a subfolder.
+
+Turning talks or posters into repositories is relatively straightforward **after** you have done it a few times. There are quite a few things that have to be learned to get started. Learning by doing is certainly an option. A little study can go a long way here, though. There is a lot of online material available and this list just scratches the surface:
+
+- Git
+  - [Git Pro book](https://git-scm.com/book/en/v2)
+  - [Git tutorial](https://git-scm.com/docs/gittutorial)
+  - [Git documentation](https://git-scm.com/doc)
+  - [Git downloads](https://git-scm.com/downloads)
+  - [Github](https://help.github.com/en), [Bitbucket](https://confluence.atlassian.com/bitbucket/bitbucket-cloud-documentation-221448814.html), and [Gitlab](https://about.gitlab.com/get-started/) also have help
+- [Github](https://help.github.com/en/github)
+- Markdown
+  - [Guide to Github markdown](https://guides.github.com/features/mastering-markdown/)
+  - [Adam Pritchard's Markdown Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
+- [Atom text editor](https://atom.io/)
+
+The example will be using Github, so you might want to get an account set up. The other Git hosting services (Bitbucket and GitLab) can probably do something similar. If you do some shallow reading about Github, you might be tempted to try and do things via the web interface. That will end in frustration. Github is really a hosting/sharing service for your local data repositories. It can support large and complicated projects. Using Github when you are a single developer can seem like a big ask.
+
+The use pattern goes like this:
+- create new projects at Github using the web interface
+- clone the repository to your local machine
+- manage the content in the local repository
+  - add files
+  - edit files
+  - edit README.md files
+  - keep it all under version control with Git
+  - push updated content back to Github for hosting
+
+I use the command line for Git on my local iMac. I do not like the command line much. I have looked at some local GUI Git options, but I find them harder to learn than the handful of Git commands that I need. Your milage may vary...
+
+Even if you do not plan to write and share actual code, the web hosting features of Github are pretty useful. It is worth the time investment to setup Git locally to take advantage of Github. Creating websites from scratch is probably more involved, since version control is often used in that context. You would probably have to learn Git anyway.
 
 ---
 
@@ -12,68 +48,145 @@ Example of turning a Powerpoint talk into a repo README.md. Created by Phil Wilm
 
 ---
 
-![slide 1](images_talk/Slide1.png)
+![Step 1](images_example/Step-01.png)
 
-I would like to thank the organizers.
-
----
-
-![slide 2](images_talk/Slide2.png)
-
-Like many of you, I am not too excited to be on this side of the podium. Let's hope the talk goes like planned...
+We will assume you have set up your Github account and have a main page that looks like mine. You can add your favorite mug shot, some profile propaganda, etc. You can have up to 6 repositories pinned to the main page. In the upper right corner is the `+` button. Use that button to add a new repository to hold your meeting presentation content.
 
 ---
 
-![slide 3](images_talk/Slide3.png)
 
-I spent much of the winter creating notebooks to explain TMT data normalization and statistical testing. They are available on Github (www.github.com/pwilmart). Around the time the call for abstracts for this meeting went out, there was this Atlantic article claiming that notebooks could replace papers. That made me think that a little introduction to notebooks would be fun.
+![Step 2](images_example/Step-02.png)
 
----
-
-![slide 4](images_talk/Slide4.png)
-
-The Atlantic article claims that notebooks can replace traditional scientific papers. What kind of notebooks are they talking about? They are not electronic lab notebooks, nor are they similar to Evernote notebooks. The notebooks are like Mathematica notebooks and their newer open source variant Jupyter notebooks. These notebooks are web server applications with some connection to a local programming environment. You create and interact with notebooks through web browsers. Notebooks can render rich text formatting, execute code blocks (typically Python or R), and display the output (graphics and text) from the code blocks. I will show you Jupyter notebooks today, but R Markdown in RStudio is conceptually very similar.
+When you create a new repository, you have to specify a few things. Pick an informative name for the repository. It is best to avoid spaces (underscores are a good replacement for spaces) in the name. Add a one sentence description (you can add and edit these things later, too). Github is all about sharing and repositories are public by default. We want to have a README.md file and having it created when the repository is set up is handy (it can be added later, too). Sharing content **always** has some legal consequences. You do not have to specify an [open source license](https://choosealicense.com) to create the repository, and you may have some institutional limitations. The MIT license is very permissive and I usually go that route. Your level of paranoia may differ from mine. Click the big green button to create the repository.
 
 ---
 
-![slide 5](images_talk/Slide5.png)
+![Step 3](images_example/Step-03.png)
 
-Before you can launch notebooks, you have to install the webserver application stuff. If you install a scientific Python distribution like Anaconda, you get Jupyter notebooks to go with numpy, matplotlib, pandas, scipy, scikit learn, etc. Scientific Python distributions have many packages that are not part of the standard Python library. Anaconda makes it easier to install all of these and keep them updated. Anaconda and all of the major packages including Jupyter notebooks (www.jupyter.org) have extensive online documentation. Python support is included by default; however, support for R takes some extra installation steps.
-
----
-
-![slide 6](images_talk/Slide6.png)
+The web page for the repository will open. We have two files: the license file and the README.md Markdown file. The Markdown file is rendered as web content automatically and appears below the list of files. So far, we just have a main header and our one-line description. The big green `Clone or download` button will give us the URL so we can clone the repository to our local machine.
 
 ---
 
-![slide 7](images_talk/Slide7.png)
+![Step 4](images_example/Step-04.png)
 
-But wait. R has many more ways to visualize data. We have three replicates at each time point. We can pick each time point and see how similar the biological replicates are to each other. We can use a function from the "psych" package to do multi-panel scatter plots. With a single line of code, we can get the 9-panel plots. We can compare without IRS (left) to with IRS (right).
-
-The lower diagonal is each replicate scatter plotted against the other replicates. The red line is a linear fit. The upper diagonals are the correlation coefficients. The diagonal shows the histogram of the log2 intensity distribution, a kernel density smoother, and a rug plot. The data on the right are obviously much better than the data on the left. If the normalization works correctly, each biological replicate should be similar to the others, independent of which TMT experiment it comes from.
+At the bottom of this Finder window on my iMac, you can see the file path. I am lazy, so I keep my Git repositories in a Box Sync folder. That keeps my iMac, a laptop, and some work computers in sync. I could use Github to sync files between computers, but that is less automatic. I have a `Github_misc` folder and a `meetings` subfolder. Each folder here is a separate Github repository (except `images`, which is collecting screen shots).
 
 ---
 
-![slide 8](images_talk/Slide8.png)
+![Step 5](images_example/Step-05.png)
 
-The Atlantic article predicts the demise of the scientific paper, and its replacement by notebooks. I do not think we are quite there yet (if that is even possible). However, notebooks would make great supplemental files for critical parts of the data analyses that are often rather poorly described in current papers. The biological samples and processing are usually done well. Since the MCP 2004 guidelines for publishing proteomics data, mass spectrometer and chromatography steps are typically detailed adequately. Most papers also describe search program settings and protein databases accurately. The normalization of quantitative data and statistical testing steps are probably the most poorly described parts of data analyses. This is an area that can be ideally addressed by notebooks.
-
-Notebooks can be developed as templates for quality control, normalizations, and statistical testing, and easily modified for new experiments. This would enable more rapid assessment that the sample processing and mass spectrometry worked correctly. The visualizations available for evaluating the sanity of differential expression candidates is important to do before time and money is spent on validation efforts. Or before trying to convince reviewers that your data analysis was performed correctly.
+I need to open a `Terminal` window for command line commands on the Mac. I have to navigate to the `...Github_misc/meetings` folder. I want to clone the `talk_to_repo_example` repository in that location. The command is `git clone <URL>`, where the URL was copied from Github. When that command is executed, we will see some status details from Git as the files are downloaded and the repository is created.
 
 ---
 
-![slide 9](images_talk/Slide9.png)
+![Step 6](images_example/Step-06.png)
 
-Notebooks are really powerful; however, power does not come cheaply. There can be a tremendous amount of learning involved and that can take a lot of time. This is time that will not directly further your career, so you have to be very careful about the time spent. All of these topics have multiple books written about them, and very extensive online documentation. I find Python to be a more intuitive computer language to learn, but Python 3 is more complicated that Python 2 was. The scientific extensions are extensive. R is not much like other computer languages and learning how to be effective at coding in R can be a **lengthy** journey.
-
-I did not have any time to talk about version control, another key component in reproducible research, but Git and Github are also big topics with lots to learn. All of these topics are pretty central to "data science", an emerging field, and this is where I have learned about them. The folks listed here are some of the key people to pay attention to in data science. Hadley is one of the most influential R programmers (ggplot2 and the tidyverse), Wes wrote the pandas table manager package for Python, and Jake has written the Altair visualization package for Python (and is local).
+If we go back to the Finder window, we will see the new repository.
 
 ---
 
-![slide 10](images_talk/Slide10.png)
+![Step 7](images_example/Step-07.png)
 
-Thank you for your time and attention. Please visit the Github site for complete notebook examples and more.
+Inside the repository, we will have the license and README files (I have an images folder here because I am accumulating these screen shots). We can add a copy of the PowerPoint presentation that we want to make into a README.md and have available for download. This example is 10 slides of the 23 slide talk. The full presentation was 80 MB because of the graphics content.
 
 ---
 
-Full talk is in [this repository](https://github.com/pwilmart/Cascadia_2018)
+![Step 8](images_example/Step-08.png)
+
+First and foremost, Git is a version control system. We can commit our work as we go so that we are protected from file loss, ourselves, etc. We have to navigate to our new repository so that Git knows what files to operate on. The commands for the basic Git usage are:
+
+- check the status (do this a lot)
+- add files accordingly
+  - non-tracked files/folders are in red
+  - tracked files/folders are in green after they have been added
+  - we may not want to commit all files every time
+- commit the files/changes
+
+When you are working on a repository, it is good to just keep an open command line window around on your desktop.
+
+---
+
+![Step 9](images_example/Step-09.png)
+
+Open up the PowerPoint presentation.
+
+---
+
+![Step 10](images_example/Step-10.png)
+
+In the `File` menu, there is an `Export...` command. That will let you turn the slides into `PNG` images that we can link to from the README.md file. We want `PNG` as the export format. We want to convert all of the slides into `PNG` files. You might need to do some trial and error on the image sizes (in pixels) to see what the quality is like. Bigger sizes might look better when scaled down at the expense of larger file sizes.
+
+> You can export one slide at a given size, link to it in a `README.md` file, commit and push back to Github. View the `README.md` from a web browser and check the image quality. Try to find the smallest size that give the desired image quality. Do the full export with the size that worked best.
+
+We can also name the folder where the images will be written (`images_talk`).
+
+---
+
+![Step 11](images_example/Step-11.png)
+
+We will have the new folder with the images in our "site".
+
+---
+
+![Step 12](images_example/Step-12.png)
+
+Now, we want to add links to those images in the `README.md` file. Hopefully, you also have nice notes for each slide to serve as captions for each image. The [Atom text editor](https://atom.io/) is a nice text editor from Github and it is very nice for editing Markdown. We want to open the `README.md` file with Atom. There is a Markdown preview mode (<SHIFT><CONTROL><M> key combination on the Mac) that will give us side-by-side editor and preview windows.
+
+---
+
+![Step 13](images_example/Step-13.png)
+
+Back in PowerPoint, switch to `Notes Page` view. This will give us the slide images and the text of the notes. We will be copying the notes text and pasting it into the `README.md` file.
+
+---
+
+![Step 14](images_example/Step-14.png)
+
+Check the relative path (`images_talk`) and the filenames for the exported `PNG` files. The filenames are the default from PowerPoint.
+
+---
+![Step 15](images_example/Step-15.png)
+
+I like [this cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) for Github Markdown. Most Markdown dialects are similar for most things but can have some unique options. The format for image links is `![alt text](path to image file)`. We can use a pattern that is easy to copy/paste/edit: `![Slide X](images_talk/SlideX.png)`, where X goes from 1 to 10 for this example. We will use a repeating block of Markdown:
+
+```
+![Slide X](images_talk/SlideX.png)
+
+Text from Notes for slide X.
+
+---
+```
+
+We will just copy/paste to repeat the block and edit it accordingly.
+
+---
+![Step 16](images_example/Step-16.png)
+
+We can get the Notes text from the `Notes Page` view in PowerPoint.
+
+---
+![Step 17](images_example/Step-17.png)
+
+We just repeat and edit the Markdown blocks for each slide in the presentation.
+
+---
+![Step 18](images_example/Step-18.png)
+
+We can enhance the Markdown if we want to add hyperlinks, lists, etc. Markdown is a little more expressive than the Notes text in PowerPoint, so go crazy. Do not forget to save the changes to the `README.md` file in Atom.
+
+---
+![Step 19](images_example/Step-19.png)
+
+We need to get the updated `README.md` file committed to the repository and get the updated repository **pushed** back to Github. We check the repository status, add files accordingly, commit the changes, then push the changes back up to Github. You may have to provide your Github username and password to complete the push. The keychain on the Mac remembers the login details.
+
+---
+![Step 20](images_example/Step-20.png)
+
+We can update the browser and see what the repository at Github looks like. Here, I have set up the presentation example as a subfolder within this broader example. The subfolder has the PowerPoint file, the `README.md` file, and a subfolder of slide images. The `README.md` Markdown renders as web content automatically at Github.  
+
+---
+![Step 21](images_example/Step-21.png)
+
+We have our presentation hosted on the web in an easy to read format. This is a pretty generic method using some basic features of PowerPoint, a little file organization, a little Markdown, Atom, some Git, and Github.
+
+---
