@@ -2,7 +2,7 @@
 
 ### Created by Phil Wilmarth, November 9, 2019.
 
-Example of turning a Powerpoint talk into a repo README.md. This is an example inside an example. The main repository is about how to create a repository to host a presentation from a scientific meeting. This README.md will have images, text, and links to show the steps involved.
+Example of turning a Powerpoint talk into a repo `README.md`. This is an example inside an example. The main repository is about how to create a repository to host a presentation from a scientific meeting. This `README.md` will have images, text, and links to show the steps involved.
 
 The example talk used here is a truncated talk from the 2018 Cascadia Proteomics Symposium about using Jupyter notebooks in proteomics work. There is a `talk_example` folder that has the shortened talk turned into a useful repository. The folder has a `README.md` file that functions as a web page because Github uses `README.md` file like websites use `index.html` files. The images used in the   `README.md` file are in an `images_talk` folder. The PowerPoint file of the truncated talk (`Cascadia_2018_short.pptx`) is also present. The full presentation is [located here](https://github.com/pwilmart/Cascadia_2018).
 
@@ -15,7 +15,7 @@ Turning talks or posters into repositories is relatively straightforward **after
   - [Git tutorial](https://git-scm.com/docs/gittutorial)
   - [Git documentation](https://git-scm.com/doc)
   - [Git downloads](https://git-scm.com/downloads)
-  - [Github](https://help.github.com/en), [Bitbucket](https://confluence.atlassian.com/bitbucket/bitbucket-cloud-documentation-221448814.html), and [Gitlab](https://about.gitlab.com/get-started/) also have help
+  - [Github](https://help.github.com/en), [Bitbucket](https://confluence.atlassian.com/bitbucket/bitbucket-cloud-documentation-221448814.html), and [GitLab](https://about.gitlab.com/get-started/) also have help
 - [Github](https://help.github.com/en/github)
 - Markdown
   - [Guide to Github markdown](https://guides.github.com/features/mastering-markdown/)
@@ -40,14 +40,6 @@ Even if you do not plan to write and share actual code, the web hosting features
 
 ---
 
-**Pattern:**
-- [optional] slide title or number
-- hyperlink to slide image
-- text from note for slide
-- separator
-
----
-
 ![Step 1](images_example/Step-01.png)
 
 We will assume you have set up your Github account and have a main page that looks like mine. You can add your favorite mug shot, some profile propaganda, etc. You can have up to 6 repositories pinned to the main page. In the upper right corner is the `+` button. Use that button to add a new repository to hold your meeting presentation content.
@@ -57,19 +49,19 @@ We will assume you have set up your Github account and have a main page that loo
 
 ![Step 2](images_example/Step-02.png)
 
-When you create a new repository, you have to specify a few things. Pick an informative name for the repository. It is best to avoid spaces (underscores are a good replacement for spaces) in the name. Add a one sentence description (you can add and edit these things later, too). Github is all about sharing and repositories are public by default. We want to have a README.md file and having it created when the repository is set up is handy (it can be added later, too). Sharing content **always** has some legal consequences. You do not have to specify an [open source license](https://choosealicense.com) to create the repository, and you may have some institutional limitations. The MIT license is very permissive and I usually go that route. Your level of paranoia may differ from mine. Click the big green button to create the repository.
+When you create a new repository, you have to specify a few things. Pick an informative name for the repository. It is best to avoid spaces (underscores are a good replacement for spaces) in the name. Add a one sentence description (you can add and edit these things later, too). Github is all about sharing and repositories are public by default. We want to have a `README.md` file and having it created when the repository is set up is handy (it can be added later, too). Sharing content **always** has some legal consequences. You do not have to specify an [open source license](https://choosealicense.com) to create the repository, and you may have some institutional limitations. The MIT license is very permissive and I usually go that route. Your level of paranoia may differ from mine. Click the big green button to create the repository.
 
 ---
 
 ![Step 3](images_example/Step-03.png)
 
-The web page for the repository will open. We have two files: the license file and the README.md Markdown file. The Markdown file is rendered as web content automatically and appears below the list of files. So far, we just have a main header and our one-line description. The big green `Clone or download` button will give us the URL so we can clone the repository to our local machine.
+The web page for the repository will open. We have two files: the license file and the `README.md` Markdown file. The Markdown file is rendered as web content automatically and appears below the list of files. So far, we just have a main header and our one-line description. The big green `Clone or download` button will give us the URL so we can clone the repository to our local machine.
 
 ---
 
 ![Step 4](images_example/Step-04.png)
 
-At the bottom of this Finder window on my iMac, you can see the file path. I am lazy, so I keep my Git repositories in a Box Sync folder. That keeps my iMac, a laptop, and some work computers in sync. I could use Github to sync files between computers, but that is less automatic. I have a `Github_misc` folder and a `meetings` subfolder. Each folder here is a separate Github repository (except `images`, which is collecting screen shots).
+At the bottom of this Finder window on my iMac, you can see the file path. I am lazy, so I keep my Git repositories in a Box Sync folder. That keeps my iMac, a laptop, and some work computers in sync. I could use Github to sync files between computers, but that is less automatic. I have a `Github_misc` folder and a `meetings` subfolder. Each folder here is a separate Github repository (except `images`, which is collecting these screen shots).
 
 ---
 
@@ -102,7 +94,7 @@ First and foremost, Git is a version control system. We can commit our work as w
   - we may not want to commit all files every time
 - commit the files/changes
 
-When you are working on a repository, it is good to just keep an open command line window around on your desktop.
+When you are working on a repository, it is good to just keep an open command line window hanging around on your desktop.
 
 ---
 
@@ -114,7 +106,7 @@ Open up the PowerPoint presentation.
 
 ![Step 10](images_example/Step-10.png)
 
-In the `File` menu, there is an `Export...` command. That will let you turn the slides into `PNG` images that we can link to from the README.md file. We want `PNG` as the export format. We want to convert all of the slides into `PNG` files. You might need to do some trial and error on the image sizes (in pixels) to see what the quality is like. Bigger sizes might look better when scaled down at the expense of larger file sizes.
+In the `File` menu, there is an `Export...` command. That will let you turn the slides into `PNG` images that we can link to from the README.md file. We want `PNG` as the export format. We want to convert **all** of the slides into `PNG` files. You might need to do some trial and error on the image sizes (in pixels) to see what the quality is like. Bigger sizes might look better when scaled down at the expense of larger file sizes.
 
 > You can export one slide at a given size, link to it in a `README.md` file, commit and push back to Github. View the `README.md` from a web browser and check the image quality. Try to find the smallest size that give the desired image quality. Do the full export with the size that worked best.
 
@@ -130,7 +122,7 @@ We will have the new folder with the images in our "site".
 
 ![Step 12](images_example/Step-12.png)
 
-Now, we want to add links to those images in the `README.md` file. Hopefully, you also have nice notes for each slide to serve as captions for each image. The [Atom text editor](https://atom.io/) is a nice text editor from Github and it is very nice for editing Markdown. We want to open the `README.md` file with Atom. There is a Markdown preview mode (<SHIFT><CONTROL><M> key combination on the Mac) that will give us side-by-side editor and preview windows.
+Now, we want to add links to those images in the `README.md` file. Hopefully, you also have nice notes for each slide to serve as captions for each image. The [Atom text editor](https://atom.io/) is a nice text editor from Github and it is very nice for editing Markdown. We want to open the `README.md` file with Atom. There is a Markdown preview mode (`SHIFT+CONTROL+M` key combination on the Mac) that will give us side-by-side editor and preview windows.
 
 ---
 
@@ -177,7 +169,7 @@ We can enhance the Markdown if we want to add hyperlinks, lists, etc. Markdown i
 ---
 ![Step 19](images_example/Step-19.png)
 
-We need to get the updated `README.md` file committed to the repository and get the updated repository **pushed** back to Github. We check the repository status, add files accordingly, commit the changes, then push the changes back up to Github. You may have to provide your Github username and password to complete the push. The keychain on the Mac remembers the login details.
+We need to get the updated `README.md` file committed to the repository and get the updated repository **pushed** back to Github. We check the repository status, add files accordingly, commit the changes, then push the changes back up to Github. You may have to provide your Github username and password to complete the push. The keychain on my Mac remembers the login details.
 
 ---
 ![Step 20](images_example/Step-20.png)
