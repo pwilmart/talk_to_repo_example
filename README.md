@@ -10,14 +10,14 @@ There are different ways to organize things at Github in this context. Separate 
 
 Turning talks or posters into repositories is relatively straightforward **after** you have done it a few times. There are quite a few things that have to be learned to get started. Learning by doing is certainly an option. A little study can go a long way here, though. There is a lot of online material available and this list just scratches the surface:
 
-- Git
+- [Git](https://en.wikipedia.org/wiki/Git)
   - [Git Pro book](https://git-scm.com/book/en/v2)
   - [Git tutorial](https://git-scm.com/docs/gittutorial)
   - [Git documentation](https://git-scm.com/doc)
   - [Git downloads](https://git-scm.com/downloads)
   - [Github](https://help.github.com/en), [Bitbucket](https://confluence.atlassian.com/bitbucket/bitbucket-cloud-documentation-221448814.html), and [GitLab](https://about.gitlab.com/get-started/) also have help
 - [Github](https://help.github.com/en/github)
-- Markdown
+- [Markdown](https://en.wikipedia.org/wiki/Markdown)
   - [Guide to Github markdown](https://guides.github.com/features/mastering-markdown/)
   - [Adam Pritchard's Markdown Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
 - [Atom text editor](https://atom.io/)
@@ -122,7 +122,7 @@ We will have the new folder with the images in our "site".
 
 ![Step 12](images_example/Step-12.png)
 
-Now, we want to add links to those images in the `README.md` file. Hopefully, you also have nice notes for each slide to serve as captions for each image. The [Atom text editor](https://atom.io/) is a nice text editor from Github and it is very nice for editing Markdown. We want to open the `README.md` file with Atom. There is a Markdown preview mode (`SHIFT+CONTROL+M` key combination on the Mac) that will give us side-by-side editor and preview windows.
+Now, we want to add links to those images in the `README.md` file. Hopefully, you also have nice notes for each slide to serve as captions for each image. The [Atom text editor](https://atom.io/) is a nice text editor from Github and it is very handy for editing Markdown. We want to open the `README.md` file with Atom. There is a Markdown preview mode (`SHIFT+CONTROL+M` key combination on the Mac) that will give us side-by-side *editor* and *preview* windows.
 
 ---
 
@@ -169,7 +169,7 @@ We can enhance the Markdown if we want to add hyperlinks, lists, etc. Markdown i
 ---
 ![Step 19](images_example/Step-19.png)
 
-We need to get the updated `README.md` file committed to the repository and get the updated repository **pushed** back to Github. We check the repository status, add files accordingly, commit the changes, then push the changes back up to Github. You may have to provide your Github username and password to complete the push. The keychain on my Mac remembers the login details.
+We need to get the updated `README.md` file committed to the repository and get the updated repository **pushed** back to Github. We check the repository status, add files accordingly, commit the changes, then push the changes back up to Github. You may have to provide your Github username and password to complete the push. The keychain on my Mac remembers my login details.
 
 ---
 ![Step 20](images_example/Step-20.png)
@@ -179,6 +179,6 @@ We can update the browser and see what the repository at Github looks like. Here
 ---
 ![Step 21](images_example/Step-21.png)
 
-We have our presentation hosted on the web in an easy to read format. This is a pretty generic method using some basic features of PowerPoint, a little file organization, a little Markdown, Atom, some Git, and Github.
+We have our presentation hosted on the web in an easy to read format. This is a pretty generic method using some basic features of PowerPoint, a little file organization, a little Markdown, Atom, some basic Git, and Github.
 
 ---
