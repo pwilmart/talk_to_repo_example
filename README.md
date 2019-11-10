@@ -16,7 +16,9 @@ Turning talks or posters into repositories is relatively straightforward **after
   - [Git documentation](https://git-scm.com/doc)
   - [Git downloads](https://git-scm.com/downloads)
   - [Github](https://help.github.com/en), [Bitbucket](https://confluence.atlassian.com/bitbucket/bitbucket-cloud-documentation-221448814.html), and [GitLab](https://about.gitlab.com/get-started/) also have help
-- [Github](https://help.github.com/en/github)
+- [Github](https://kinsta.com/knowledgebase/what-is-github/)
+  - [Github help](https://help.github.com/en/github)
+  - [Github guides](https://guides.github.com)
 - [Markdown](https://en.wikipedia.org/wiki/Markdown)
   - [Guide to Github markdown](https://guides.github.com/features/mastering-markdown/)
   - [Adam Pritchard's Markdown Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
