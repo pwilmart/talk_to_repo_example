@@ -31,10 +31,9 @@ The use pattern goes like this:
 - clone the repository to your local machine
 - manage the content in the local repository
   - add files
-  - edit files
-  - edit README.md files
-  - keep it all under version control with Git
-  - push updated content back to Github for hosting
+  - edit README.md and other files
+- keep it all under version control with Git
+- push updated content back to Github for hosting
 
 I use the command line for Git on my local iMac. I do not like the command line much. I have looked at some local GUI Git options, but I find them harder to learn than the handful of Git commands that I need. Your milage may vary...
 
