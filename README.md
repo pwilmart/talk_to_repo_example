@@ -19,6 +19,7 @@ Turning talks or posters into repositories is relatively straightforward **after
 - [Github](https://kinsta.com/knowledgebase/what-is-github/)
   - [Github help](https://help.github.com/en/github)
   - [Github guides](https://guides.github.com)
+- [Jenny Bryan's amazing free book](https://happygitwithr.com)
 - [Markdown](https://en.wikipedia.org/wiki/Markdown)
   - [Guide to Github markdown](https://guides.github.com/features/mastering-markdown/)
   - [Adam Pritchard's Markdown Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
@@ -181,5 +182,7 @@ We can update the browser and see what the repository at Github looks like. Here
 ![Step 21](images_example/Step-21.png)
 
 We have our presentation hosted on the web in an easy to read format. This is a pretty generic method using some basic features of PowerPoint, a little file organization, a little Markdown, Atom, some basic Git, and Github.
+
+> Notes about posters: the same basic concept works for posters except that you have to manually export each figure one-at-a-time (and do the figure naming).
 
 ---
